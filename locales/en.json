@@ -1,0 +1,8 @@
+{
+	"failed": "failed",
+	"Cannot read property 'url1' of undefined": "Cannot read property 'url1' of undefined",
+	"Cannot read property 'urls' of undefined": "Cannot read property 'urls' of undefined",
+	"Success": "Success",
+	"Recording Started!": "Recording Started!",
+	"Cannot read property 'stdin' of undefined": "Cannot read property 'stdin' of undefined"
+}
