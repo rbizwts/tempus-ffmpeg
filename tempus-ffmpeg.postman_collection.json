@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "7cd9ac00-2564-4338-8802-2fdce0681163",
+		"name": "tempus-record-stream",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"urls\":[\n        {\n            \"camid\":12,\n            \"resource\":\"https://tempusipsum.com:8081/hls/777.m3u8\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/api/cameraStream/start-record",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"cameraStream",
+						"start-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"urls\":[\n        {\n            \"camid\":12,\n            \"resource\":\"https://tempusipsum.com:8081/hls/777.m3u8\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/api/cameraStream/stop-record",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"cameraStream",
+						"stop-record"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
